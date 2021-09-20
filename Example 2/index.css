@@ -395,3 +395,14 @@ ul li a {
       padding: 12px 19.5px;
     }
   }
+  /* join-page media query */
+
+  @media screen and (max-width: 470px){
+    .join-body .join-message{
+      display: none;
+    }
+
+    .join-body .fill-up-form{
+      width: max(65vw, 250px);
+    }
+  }
