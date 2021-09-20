@@ -1,0 +1,296 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  :root{
+    --dark-color: #060044;
+    --light-color: #a58ee9;
+    --default-text: #B5FFD9;
+    --side-color: #ddc3e7;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--side-color);
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+  
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .dark-area {
+    background: var(--dark-color);
+    color: var(--default-text);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: max(3vw, 10px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .dark-area .owner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dark-area .owner-container .logo {
+    font-weight: 400;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .dark-area .owner-container .owner {
+    margin: 20px 0;
+    font-size: clamp(15px, calc(1.5vw + .7rem), 20px);
+  }
+  
+  .dark-area h1 {
+    text-align: center;
+    font-size: clamp(14px, calc(3vw + .3rem), 38px);
+    font-weight: 900;
+    margin: 0 15px;
+    letter-spacing: 0.1rem;
+  }
+  
+  .dark-area h2 {
+    font-size: clamp(12px, calc(2vw + .1rem), 30px);
+    font-weight: 300;
+    margin: 1vw 15px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .dark-area .emphasize {
+    font-style: italic;
+  }
+
+  .dark-area-divider{
+    background: url(img/dark-background.svg);
+    height: 100px;
+    transform: translateY(-2px);
+    z-index: 3;
+    background-size: cover;
+  }
+  
+  .light-area {
+    transform: translateY(-100px);
+    background: var(--light-color);
+    padding: max(5vw, 20px);
+    margin: 0;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  
+  .light-area form{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .light-area .email-input {
+    width: clamp(200px, 30vw, 300px);
+    border-radius: 3px;
+    outline: none;
+    background: var(--side-color);
+    color: var(--dark-color);
+    border: 1.5px solid var(--dark-color);
+    padding: 4px 2px;
+  }
+  
+  .light-area .join-now-btn {
+    background: var(--dark-color);
+    color: var(--side-color);
+    border: none;
+    outline: none;
+    padding: 5px 25px;
+    border-radius: 3px;
+  }
+  
+  .light-area-divider{
+    background: url(img/light-background.svg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    height: 100px;
+    margin-top: -150px;
+  }
+
+  .main-content {
+    margin-top: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: clamp(2px, 3vw, 30px);
+    color: var(--dark-color);
+  }
+  
+  .main-content .iframe-holder{
+    height: max(100%, 100px);
+  }
+  
+  .main-content .vid {
+    width: max(90%, 150px);
+    height: max(100%, 100px);
+    background: var(--dark-color);
+  }
+  
+  .main-content .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3vw;
+  }
+  
+  .main-content .details .details-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+  
+  .main-content .details .details-section .email {
+    font-size: clamp(10px, calc(2vw + .3rem), 16px);
+    font-weight: 700;
+    word-spacing: 0.1rem;
+  }
+  
+  article.infos {
+    margin-top: clamp(20px, calc(10vw + .2rem), 80px);
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+    text-align: justify;
+    color: var(--dark-color);
+  }
+  
+  article.infos .info-title {
+    text-align: center;
+    font-size: clamp(12px,calc(5vw + .2vw), 20px);
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  article.infos .info-content {
+    font-weight: 300;
+    font-size: clamp(10px, calc(4vw + .3vw), 18px);
+  }
+  
+  article.infos .info-content .emp {
+    font-weight: 700;
+  }
+  
+  article.infos a{
+    color: var(--dark-color);
+    text-decoration: none;
+  }
+  
+  article.infos a:visited{
+    color: var(--dark-color);
+    text-decoration: none;
+  }
+  
+  @media all and (max-width: 550px) {
+  
+    .dark-area .owner-container .logo {
+      margin-top: 25px;
+    }
+  
+    .owner {
+      display: none;
+    }
+  
+    .dark-area h1{
+      margin-top: 10px;
+    }
+  
+    .dark-area h2{
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  
+    .post {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100vw;
+    }
+    .post .email-input,
+    .post .join-now-btn {
+      width: max(60vw, 150px);
+      padding: 2px 1px;
+    }
+    .post .email-input {
+      margin-bottom: 5px;
+    }
+  
+    .main-content{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  
+    .main-content .iframe-holder{
+      width: max(90%, 150px);
+      margin-bottom: clamp(5px, calc(5vw, .5rem), 20px);
+    }
+  
+    article.infos{
+      flex-direction: column;
+    }
+  }
